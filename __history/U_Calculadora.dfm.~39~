@@ -1,0 +1,187 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  BorderStyle = bsSizeToolWin
+  Caption = 'CALCULADORA'
+  ClientHeight = 491
+  ClientWidth = 437
+  Color = clWindowFrame
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Display: TEdit
+    Left = 0
+    Top = 0
+    Width = 434
+    Height = 153
+    Cursor = crIBeam
+    Align = alCustom
+    Alignment = taRightJustify
+    Color = clNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clTeal
+    Font.Height = -96
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Pnl_Botoes: TPanel
+    Left = 20
+    Top = 152
+    Width = 385
+    Height = 315
+    Align = alCustom
+    Color = cl3DDkShadow
+    Padding.Top = 50
+    Padding.Bottom = 10
+    ParentBackground = False
+    TabOrder = 1
+    object Btn_0: TButton
+      Left = 8
+      Top = 257
+      Width = 254
+      Height = 49
+      Cursor = crHandPoint
+      Caption = '0'
+      TabOrder = 0
+      OnClick = Btn_0Click
+    end
+    object Btn_1: TButton
+      Left = 8
+      Top = 181
+      Width = 70
+      Height = 70
+      Cursor = crHandPoint
+      Caption = '1'
+      TabOrder = 1
+      OnClick = Btn_1Click
+    end
+    object Btn_2: TButton
+      Left = 100
+      Top = 181
+      Width = 70
+      Height = 70
+      Cursor = crHandPoint
+      Caption = '2'
+      TabOrder = 2
+      OnClick = Btn_2Click
+    end
+    object Btn_3: TButton
+      Left = 192
+      Top = 181
+      Width = 70
+      Height = 70
+      Cursor = crHandPoint
+      Caption = '3'
+      TabOrder = 3
+      OnClick = Btn_3Click
+    end
+    object Btn_4: TButton
+      Left = 8
+      Top = 91
+      Width = 70
+      Height = 70
+      Cursor = crHandPoint
+      Caption = '4'
+      TabOrder = 4
+      OnClick = Btn_4Click
+    end
+    object Btn_5: TButton
+      Left = 100
+      Top = 91
+      Width = 70
+      Height = 70
+      Cursor = crHandPoint
+      Caption = '5'
+      TabOrder = 5
+      OnClick = Btn_5Click
+    end
+    object Btn_6: TButton
+      Left = 192
+      Top = 91
+      Width = 70
+      Height = 70
+      Cursor = crHandPoint
+      Caption = '6'
+      TabOrder = 6
+    end
+    object Btn_7: TButton
+      Left = 8
+      Top = 3
+      Width = 70
+      Height = 70
+      Cursor = crHandPoint
+      Caption = '7'
+      TabOrder = 7
+    end
+    object Btn_8: TButton
+      Left = 100
+      Top = 3
+      Width = 70
+      Height = 70
+      Cursor = crHandPoint
+      Caption = '8'
+      TabOrder = 8
+    end
+    object Btn_9: TButton
+      Left = 192
+      Top = 3
+      Width = 70
+      Height = 70
+      Cursor = crHandPoint
+      Caption = '9'
+      TabOrder = 9
+    end
+    object Btn_Div: TButton
+      Left = 324
+      Top = 59
+      Width = 50
+      Height = 50
+      Cursor = crHandPoint
+      Caption = '/'
+      TabOrder = 10
+    end
+    object Btn_Igual: TButton
+      Left = 324
+      Top = 259
+      Width = 50
+      Height = 50
+      Cursor = crHandPoint
+      Caption = '='
+      TabOrder = 11
+    end
+    object Btn_Multi: TButton
+      Left = 268
+      Top = 59
+      Width = 50
+      Height = 50
+      Cursor = crHandPoint
+      Caption = 'X'
+      TabOrder = 12
+    end
+    object Btn_Soma: TButton
+      Left = 268
+      Top = 3
+      Width = 50
+      Height = 50
+      Cursor = crHandPoint
+      Caption = '+'
+      TabOrder = 13
+    end
+    object Btn_Sub: TButton
+      Left = 324
+      Top = 3
+      Width = 50
+      Height = 50
+      Cursor = crHandPoint
+      Caption = '-'
+      TabOrder = 14
+    end
+  end
+end
