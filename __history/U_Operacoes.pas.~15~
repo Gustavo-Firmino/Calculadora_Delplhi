@@ -1,0 +1,27 @@
+unit U_Operacoes;
+
+interface
+
+uses Dialogs;
+
+procedure RecebeConverte(Sentenca : String);
+
+implementation
+
+procedure RecebeConverte(Sentenca : String);
+var
+   TamanhoSentenca, I : Integer;
+begin
+     TamanhoSentenca := Length(Sentenca);
+     for I := 0 to TamanhoSentenca do
+         if TamanhoSentenca = 0 then
+           begin
+                ShowMessage('Insira uma operação !!');
+           end;
+
+
+
+
+end;
+
+end.

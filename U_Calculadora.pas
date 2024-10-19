@@ -18,27 +18,21 @@ type
     Btn_7: TButton;
     Btn_8: TButton;
     Btn_9: TButton;
-    Display: TEdit;
     Btn_Igual: TButton;
     Btn_Soma: TButton;
     Btn_Sub: TButton;
     Btn_Multi: TButton;
     Btn_Div: TButton;
     Pnl_Botoes: TPanel;
-    procedure Btn_0Click(Sender: TObject);
-    procedure Btn_1Click(Sender: TObject);
-    procedure Btn_2Click(Sender: TObject);
-    procedure Btn_3Click(Sender: TObject);
-    procedure Btn_4Click(Sender: TObject);
-    procedure Btn_5Click(Sender: TObject);
-    procedure Btn_6Click(Sender: TObject);
-    procedure Btn_7Click(Sender: TObject);
-    procedure Btn_8Click(Sender: TObject);
-    procedure Btn_9Click(Sender: TObject);
+    Btn_C: TButton;
+    LblOp: TLabel;
+    LblN1: TLabeledEdit;
+    LblN2: TLabeledEdit;
     procedure Btn_SomaClick(Sender: TObject);
     procedure Btn_SubClick(Sender: TObject);
     procedure Btn_MultiClick(Sender: TObject);
     procedure Btn_DivClick(Sender: TObject);
+    procedure Btn_CClick(Sender: TObject);
     procedure Btn_IgualClick(Sender: TObject);
   private
     { Private declarations }
@@ -53,81 +47,96 @@ implementation
 
 {$R *.dfm}
 
-procedure TForm1.Btn_0Click(Sender: TObject);
+uses U_Operacoes;
+
+//numeros digitos
+
+
+
+
+//operaçoes
+
+procedure TForm1.Btn_CClick(Sender: TObject);
 begin
-     Display.Text := Display.Text + Btn_0.Caption;
+     LblOp.Caption := '';
+     LblN1.Text := '';
+     LblN2.Text := '';
 end;
 
-procedure TForm1.Btn_1Click(Sender: TObject);
+procedure TForm1.Btn_IgualClick(Sender: TObject);
+var n1,n2: Double;
+    I: Integer;
 begin
-     Display.Text := Display.Text + Btn_1.Caption;
-end;
 
-procedure TForm1.Btn_2Click(Sender: TObject);
-begin
-     Display.Text := Display.Text + Btn_2.Caption;
-end;
+     if (LblN1.Text = '') or (LblN2.Text = '') then
+     begin
+            ShowMessage('Uma ou mais labels estão vazias.');
+     end
+     else
+     begin
+          n1 := StrToFloat(LblN1.Text);
+          n2 := StrToFloat(LblN2.Text);
 
-procedure TForm1.Btn_3Click(Sender: TObject);
-begin
-     Display.Text := Display.Text + Btn_3.Caption;
-end;
+//          if LblOp.Caption = '+' then
+//           begin
+//                ShowMessage(FloatToStr(n1 + n2));
+//           end;
+//          if LblOp.Caption = '-' then
+//           begin
+//                ShowMessage(FloatToStr(n1 - n2));
+//           end;
+//          if LblOp.Caption = '/' then
+//           begin
+//                ShowMessage(FloatToStr(n1 / n2));
+//           end;
+//          if LblOp.Caption = 'x' then
+//           begin
+//                ShowMessage(FloatToStr(n1 * n2));
+//           end;
 
-procedure TForm1.Btn_4Click(Sender: TObject);
-begin
-     Display.Text := Display.Text + Btn_4.Caption;
-end;
 
-procedure TForm1.Btn_5Click(Sender: TObject);
-begin
-     Display.Text := Display.Text + Btn_5.Caption;
-end;
 
-procedure TForm1.Btn_6Click(Sender: TObject);
-begin
-     Display.Text := Display.Text + Btn_6.Caption;
-end;
+     end;
 
-procedure TForm1.Btn_7Click(Sender: TObject);
-begin
-     Display.Text := Display.Text + Btn_7.Caption;
-end;
 
-procedure TForm1.Btn_8Click(Sender: TObject);
-begin
-     Display.Text := Display.Text + Btn_8.Caption;
-end;
-
-procedure TForm1.Btn_9Click(Sender: TObject);
-begin
-     Display.Text := Display.Text + Btn_9.Caption;
-end;
-
-//sinais
-
-procedure TForm1.Btn_SomaClick(Sender: TObject);
-begin
-     Display.Text := Display.Text + Btn_Soma.Caption;
-end;
-
-procedure TForm1.Btn_SubClick(Sender: TObject);
-begin
-     Display.Text := Display.Text + Btn_Sub.Caption;
-end;
-
-procedure TForm1.Btn_MultiClick(Sender: TObject);
-begin
-     Display.Text := Display.Text + Btn_Multi.Caption;
 end;
 
 procedure TForm1.Btn_DivClick(Sender: TObject);
 begin
-     Display.Text := Display.Text + Btn_Div.Caption;
+     LblOp.Caption := Btn_Div.Caption;
+     Btn_Soma.Enabled := True;
+     Btn_Sub.Enabled  := True;
+     Btn_Multi.Enabled:= True;
+     Btn_Div.Enabled := False;
 end;
 
-procedure TForm1.Btn_IgualClick(Sender: TObject);
+procedure TForm1.Btn_MultiClick(Sender: TObject);
 begin
-    //funcao para operacoes
+     LblOp.Caption := Btn_Multi.Caption;
+     Btn_Soma.Enabled := True;
+     Btn_Sub.Enabled  := True;
+     Btn_Div.Enabled  := True;
+     Btn_Multi.Enabled := False;
 end;
+
+procedure TForm1.Btn_SomaClick(Sender: TObject);
+begin
+     LblOp.Caption := Btn_Soma.Caption;
+     Btn_Div.Enabled := True;
+     Btn_Sub.Enabled  := True;
+     Btn_Multi.Enabled:= True;
+     Btn_Soma.Enabled := False;
+end;
+
+procedure TForm1.Btn_SubClick(Sender: TObject);
+begin
+     LblOp.Caption := Btn_Sub.Caption;
+     Btn_Soma.Enabled := True;
+     Btn_Div.Enabled  := True;
+     Btn_Multi.Enabled:= True;
+     Btn_Sub.Enabled := False;
+end;
+
+
 
 end.

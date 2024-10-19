@@ -1,0 +1,16 @@
+unit U_Operacoes;
+
+interface
+
+uses Dialogs;
+
+procedure RecebeConverte(Sentenca : String);
+
+implementation
+
+procedure RecebeConverte(Sentenca : String);
+begin
+     StrToInt(Sentenca);
+end;
+
+end.

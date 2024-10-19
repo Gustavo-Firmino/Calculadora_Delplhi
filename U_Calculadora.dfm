@@ -4,7 +4,7 @@ object Form1: TForm1
   BorderStyle = bsSizeToolWin
   Caption = 'CALCULADORA'
   ClientHeight = 491
-  ClientWidth = 437
+  ClientWidth = 551
   Color = clWindowFrame
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,26 +14,21 @@ object Form1: TForm1
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object Display: TEdit
-    Left = 0
-    Top = 0
-    Width = 434
-    Height = 153
-    Cursor = crIBeam
-    Align = alCustom
-    Alignment = taRightJustify
-    Color = clNone
+  object LblOp: TLabel
+    Left = 246
+    Top = 30
+    Width = 74
+    Height = 116
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clTeal
+    Font.Color = clWindowText
     Font.Height = -96
     Font.Name = 'Tahoma'
-    Font.Style = []
+    Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 0
   end
   object Pnl_Botoes: TPanel
-    Left = 20
-    Top = 152
+    Left = 84
+    Top = 168
     Width = 385
     Height = 315
     Align = alCustom
@@ -41,7 +36,7 @@ object Form1: TForm1
     Padding.Top = 50
     Padding.Bottom = 10
     ParentBackground = False
-    TabOrder = 1
+    TabOrder = 0
     object Btn_0: TButton
       Left = 8
       Top = 257
@@ -50,7 +45,6 @@ object Form1: TForm1
       Cursor = crHandPoint
       Caption = '0'
       TabOrder = 0
-      OnClick = Btn_0Click
     end
     object Btn_1: TButton
       Left = 8
@@ -60,7 +54,6 @@ object Form1: TForm1
       Cursor = crHandPoint
       Caption = '1'
       TabOrder = 1
-      OnClick = Btn_1Click
     end
     object Btn_2: TButton
       Left = 100
@@ -70,7 +63,6 @@ object Form1: TForm1
       Cursor = crHandPoint
       Caption = '2'
       TabOrder = 2
-      OnClick = Btn_2Click
     end
     object Btn_3: TButton
       Left = 192
@@ -80,7 +72,6 @@ object Form1: TForm1
       Cursor = crHandPoint
       Caption = '3'
       TabOrder = 3
-      OnClick = Btn_3Click
     end
     object Btn_4: TButton
       Left = 8
@@ -90,7 +81,6 @@ object Form1: TForm1
       Cursor = crHandPoint
       Caption = '4'
       TabOrder = 4
-      OnClick = Btn_4Click
     end
     object Btn_5: TButton
       Left = 100
@@ -100,7 +90,6 @@ object Form1: TForm1
       Cursor = crHandPoint
       Caption = '5'
       TabOrder = 5
-      OnClick = Btn_5Click
     end
     object Btn_6: TButton
       Left = 192
@@ -110,7 +99,6 @@ object Form1: TForm1
       Cursor = crHandPoint
       Caption = '6'
       TabOrder = 6
-      OnClick = Btn_6Click
     end
     object Btn_7: TButton
       Left = 8
@@ -120,7 +108,6 @@ object Form1: TForm1
       Cursor = crHandPoint
       Caption = '7'
       TabOrder = 7
-      OnClick = Btn_7Click
     end
     object Btn_8: TButton
       Left = 100
@@ -130,7 +117,6 @@ object Form1: TForm1
       Cursor = crHandPoint
       Caption = '8'
       TabOrder = 8
-      OnClick = Btn_8Click
     end
     object Btn_9: TButton
       Left = 192
@@ -140,7 +126,6 @@ object Form1: TForm1
       Cursor = crHandPoint
       Caption = '9'
       TabOrder = 9
-      OnClick = Btn_9Click
     end
     object Btn_Div: TButton
       Left = 324
@@ -192,5 +177,50 @@ object Form1: TForm1
       TabOrder = 14
       OnClick = Btn_SubClick
     end
+    object Btn_C: TButton
+      Left = 324
+      Top = 203
+      Width = 50
+      Height = 50
+      Caption = 'C'
+      TabOrder = 15
+      OnClick = Btn_CClick
+    end
+  end
+  object LblN1: TLabeledEdit
+    Left = 8
+    Top = 22
+    Width = 232
+    Height = 124
+    Color = clGreen
+    EditLabel.Width = 26
+    EditLabel.Height = 13
+    EditLabel.Caption = 'LblN1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -96
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 1
+  end
+  object LblN2: TLabeledEdit
+    Left = 326
+    Top = 22
+    Width = 218
+    Height = 124
+    Color = clGreen
+    EditLabel.Width = 26
+    EditLabel.Height = 13
+    EditLabel.Caption = 'LblN2'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -96
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 2
   end
 end
