@@ -65,14 +65,40 @@ end;
 
 procedure TForm1.Btn_IgualClick(Sender: TObject);
 var n1,n2: Double;
+    I: Integer;
 begin
-     n1 := StrToFloat(LblN1.Text);
-     n2 := StrToFloat(LblN2.Text);
 
-     if LblOp.Caption = '+' then
+     if (LblN1.Text = '') or (LblN2.Text = '') then
      begin
-          ShowMessage(DoubleToString(n1 + n2));
+            ShowMessage('Uma ou mais labels estão vazias.');
+     end
+     else
+     begin
+          n1 := StrToFloat(LblN1.Text);
+          n2 := StrToFloat(LblN2.Text);
+
+//          if LblOp.Caption = '+' then
+//           begin
+//                ShowMessage(FloatToStr(n1 + n2));
+//           end;
+//          if LblOp.Caption = '-' then
+//           begin
+//                ShowMessage(FloatToStr(n1 - n2));
+//           end;
+//          if LblOp.Caption = '/' then
+//           begin
+//                ShowMessage(FloatToStr(n1 / n2));
+//           end;
+//          if LblOp.Caption = 'x' then
+//           begin
+//                ShowMessage(FloatToStr(n1 * n2));
+//           end;
+
+
+
      end;
+
+
 end;
 
 procedure TForm1.Btn_DivClick(Sender: TObject);

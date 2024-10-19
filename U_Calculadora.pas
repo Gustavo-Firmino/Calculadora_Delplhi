@@ -94,7 +94,9 @@ begin
 //                ShowMessage(FloatToStr(n1 * n2));
 //           end;
 
+             case True of
 
+             end;
 
      end;
 
