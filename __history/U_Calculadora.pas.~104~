@@ -47,7 +47,6 @@ type
     procedure Btn_8Click(Sender: TObject);
     procedure Btn_9Click(Sender: TObject);
     procedure Btn_1Click(Sender: TObject);
-    procedure Btn_VirgClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -246,5 +245,6 @@ begin
      Btn_Multi.Enabled:= True;
      Btn_Sub.Enabled := False;
 end;
+
 
 end.

@@ -34,6 +34,7 @@ type
     procedure Btn_DivClick(Sender: TObject);
     procedure Btn_CClick(Sender: TObject);
     procedure Btn_IgualClick(Sender: TObject);
+    procedure Btn_0Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -56,6 +57,16 @@ uses U_Operacoes;
 
 //operaçoes
 
+procedure TForm1.Btn_0Click(Sender: TObject);
+begin
+     LblN1.Text := LblN1.Text + Btn_0.Caption;
+     if LblOp.Caption = '' then
+     begin
+
+     end;
+
+end;
+
 procedure TForm1.Btn_CClick(Sender: TObject);
 begin
      LblOp.Caption := '';
@@ -65,7 +76,8 @@ end;
 
 procedure TForm1.Btn_IgualClick(Sender: TObject);
 var n1,n2: Double;
-    I: Integer;
+    I    : Integer;
+    X    : Char;
 begin
 
      if (LblN1.Text = '') or (LblN2.Text = '') then
@@ -75,12 +87,25 @@ begin
      else
      begin
           n1 := StrToFloat(LblN1.Text);
-     n2 := StrToFloat(LblN2.Text);
+          n2 := StrToFloat(LblN2.Text);
 
-     if LblOp.Caption = '+' then
-     begin
-          ShowMessage(FloatToStr(n1 + n2));
-     end;
+          if LblOp.Caption = '+' then
+           begin
+                ShowMessage(FloatToStr(n1 + n2));
+           end;
+          if LblOp.Caption = '-' then
+           begin
+                ShowMessage(FloatToStr(n1 - n2));
+           end;
+          if LblOp.Caption = '/' then
+           begin
+                ShowMessage(FloatToStr(n1 / n2));
+           end;
+          if LblOp.Caption = 'X' then
+           begin
+                ShowMessage(FloatToStr(n1 * n2));
+           end;
+
      end;
 
 

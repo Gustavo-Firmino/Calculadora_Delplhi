@@ -3,12 +3,12 @@
 	<Transactions>
     <Transaction>2024/10/10 21:27:42.000.109,=C:\Users\Treinamento01\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2024/10/15 21:03:31.000.644,=C:\Users\Treinamento01\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2024/10/15 21:07:12.000.013,C:\Users\Treinamento01\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Desenvolvimento\delphi\beginner\Calculadora_Delplhi\U_Calculadora.dfm</Transaction>
-    <Transaction>2024/10/15 21:07:12.000.013,C:\Users\Treinamento01\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Desenvolvimento\delphi\beginner\Calculadora_Delplhi\U_Calculadora.pas</Transaction>
-    <Transaction>2024/10/15 21:07:21.000.920,C:\Users\Treinamento01\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Desenvolvimento\delphi\beginner\Calculadora_Delplhi\Calculadora.dproj</Transaction>
+    <Transaction>2024/10/15 21:07:12.000.013,C:\Desenvolvimento\delphi\beginner\Calculadora_Delplhi\U_Calculadora.pas=C:\Users\Treinamento01\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/10/15 21:07:12.000.013,C:\Desenvolvimento\delphi\beginner\Calculadora_Delplhi\U_Calculadora.dfm=C:\Users\Treinamento01\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/10/15 21:07:21.000.920,C:\Desenvolvimento\delphi\beginner\Calculadora_Delplhi\Calculadora.dproj=C:\Users\Treinamento01\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2024/10/15 21:46:30.000.719,=C:\Desenvolvimento\delphi\beginner\Calculadora_Delplhi\Unit1.pas</Transaction>
-    <Transaction>2024/10/15 21:46:39.000.525,C:\Desenvolvimento\delphi\beginner\Calculadora_Delplhi\Unit1.pas=C:\Desenvolvimento\delphi\beginner\Calculadora_Delplhi\U_Digitos.pas</Transaction>
-    <Transaction>2024/10/15 21:47:19.000.125,C:\Desenvolvimento\delphi\beginner\Calculadora_Delplhi\U_Digitos.pas=C:\Desenvolvimento\delphi\beginner\Calculadora_Delplhi\U_Operacoes.pas</Transaction>
-    <Transaction>2024/10/19 17:38:41.958,C:\Desenvolvimento\delphi\beginner\Calculadora_Delplhi\U_Operacoes.pas=</Transaction>
+    <Transaction>2024/10/15 21:46:39.000.525,C:\Desenvolvimento\delphi\beginner\Calculadora_Delplhi\U_Digitos.pas=C:\Desenvolvimento\delphi\beginner\Calculadora_Delplhi\Unit1.pas</Transaction>
+    <Transaction>2024/10/15 21:47:19.000.125,C:\Desenvolvimento\delphi\beginner\Calculadora_Delplhi\U_Operacoes.pas=C:\Desenvolvimento\delphi\beginner\Calculadora_Delplhi\U_Digitos.pas</Transaction>
+    <Transaction>2024/10/19 17:38:41.000.958,C:\Desenvolvimento\delphi\beginner\Calculadora_Delplhi\U_Operacoes.pas=</Transaction>
   </Transactions>
 </BorlandProject>

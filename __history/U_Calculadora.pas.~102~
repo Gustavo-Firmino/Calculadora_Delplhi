@@ -47,7 +47,6 @@ type
     procedure Btn_8Click(Sender: TObject);
     procedure Btn_9Click(Sender: TObject);
     procedure Btn_1Click(Sender: TObject);
-    procedure Btn_VirgClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -195,14 +194,6 @@ begin
 
 end;
 
-procedure TForm1.Btn_VirgClick(Sender: TObject);
-begin
-     if LblOp.Caption = '' then
-        LblN1.Text := LblN1.Text + Btn_Virg.Caption
-     else
-         LblN2.Text := LblN2.Text + Btn_Virg.Caption;
-end;
-
 procedure TForm1.Btn_DelClick(Sender: TObject);
 begin
      if LblOp.Caption = '' then
@@ -246,5 +237,7 @@ begin
      Btn_Multi.Enabled:= True;
      Btn_Sub.Enabled := False;
 end;
+
+
 
 end.

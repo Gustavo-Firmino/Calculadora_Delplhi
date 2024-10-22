@@ -28,12 +28,24 @@ type
     LblOp: TLabel;
     LblN1: TLabeledEdit;
     LblN2: TLabeledEdit;
+    Btn_Del: TButton;
     procedure Btn_SomaClick(Sender: TObject);
     procedure Btn_SubClick(Sender: TObject);
     procedure Btn_MultiClick(Sender: TObject);
     procedure Btn_DivClick(Sender: TObject);
     procedure Btn_CClick(Sender: TObject);
     procedure Btn_IgualClick(Sender: TObject);
+    procedure Btn_0Click(Sender: TObject);
+    procedure Btn_DelClick(Sender: TObject);
+    procedure Btn_2Click(Sender: TObject);
+    procedure Btn_3Click(Sender: TObject);
+    procedure Btn_4Click(Sender: TObject);
+    procedure Btn_5Click(Sender: TObject);
+    procedure Btn_6Click(Sender: TObject);
+    procedure Btn_7Click(Sender: TObject);
+    procedure Btn_8Click(Sender: TObject);
+    procedure Btn_9Click(Sender: TObject);
+    procedure Btn_1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -49,12 +61,6 @@ implementation
 
 uses U_Operacoes;
 
-//numeros digitos
-
-
-
-
-//operaçoes
 
 procedure TForm1.Btn_CClick(Sender: TObject);
 begin
@@ -63,9 +69,96 @@ begin
      LblN2.Text := '';
 end;
 
+procedure TForm1.Btn_0Click(Sender: TObject);
+begin
+     if LblOp.Caption = '' then
+        LblN1.Text := LblN1.Text + Btn_0.Caption
+     else
+         LblN2.Text := LblN2.Text + Btn_0.Caption;
+end;
+
+procedure TForm1.Btn_1Click(Sender: TObject);
+begin
+     if LblOp.Caption = '' then
+        LblN1.Text := LblN1.Text + Btn_1.Caption
+     else
+         LblN2.Text := LblN2.Text + Btn_1.Caption;
+end;
+
+
+procedure TForm1.Btn_2Click(Sender: TObject);
+begin
+     if LblOp.Caption = '' then
+        LblN1.Text := LblN1.Text + Btn_2.Caption
+     else
+         LblN2.Text := LblN2.Text + Btn_2.Caption;
+end;
+
+procedure TForm1.Btn_3Click(Sender: TObject);
+begin
+     if LblOp.Caption = '' then
+        LblN1.Text := LblN1.Text + Btn_3.Caption
+     else
+         LblN2.Text := LblN2.Text + Btn_3.Caption;
+end;
+
+
+
+procedure TForm1.Btn_4Click(Sender: TObject);
+begin
+     if LblOp.Caption = '' then
+        LblN1.Text := LblN1.Text + Btn_4.Caption
+     else
+         LblN2.Text := LblN2.Text + Btn_4.Caption;
+end;
+
+procedure TForm1.Btn_5Click(Sender: TObject);
+begin
+     if LblOp.Caption = '' then
+        LblN1.Text := LblN1.Text + Btn_5.Caption
+     else
+         LblN2.Text := LblN2.Text + Btn_5.Caption;
+end;
+
+
+
+procedure TForm1.Btn_6Click(Sender: TObject);
+begin
+     if LblOp.Caption = '' then
+        LblN1.Text := LblN1.Text + Btn_6.Caption
+     else
+         LblN2.Text := LblN2.Text + Btn_6.Caption;
+end;
+
+
+procedure TForm1.Btn_7Click(Sender: TObject);
+begin
+     if LblOp.Caption = '' then
+        LblN1.Text := LblN1.Text + Btn_7.Caption
+     else
+         LblN2.Text := LblN2.Text + Btn_7.Caption;
+end;
+
+
+procedure TForm1.Btn_8Click(Sender: TObject);
+begin
+     if LblOp.Caption = '' then
+        LblN1.Text := LblN1.Text + Btn_8.Caption
+     else
+         LblN2.Text := LblN2.Text + Btn_8.Caption;
+end;
+
+procedure TForm1.Btn_9Click(Sender: TObject);
+begin
+     if LblOp.Caption = '' then
+        LblN1.Text := LblN1.Text + Btn_9.Caption
+     else
+         LblN2.Text := LblN2.Text + Btn_9.Caption;
+end;
+
+
 procedure TForm1.Btn_IgualClick(Sender: TObject);
 var n1,n2: Double;
-    I: Integer;
 begin
 
      if (LblN1.Text = '') or (LblN2.Text = '') then
@@ -89,14 +182,23 @@ begin
            begin
                 ShowMessage(FloatToStr(n1 / n2));
            end;
-          if LblOp.Caption = 'x' then
+          if LblOp.Caption = 'X' then
            begin
                 ShowMessage(FloatToStr(n1 * n2));
            end;
-
      end;
+     LblOp.Caption := '';
+     LblN1.Text := '';
+     LblN2.Text := '';
 
+end;
 
+procedure TForm1.Btn_DelClick(Sender: TObject);
+begin
+     if LblOp.Caption = '' then
+          LblN1.Text := Copy(LblN1.Text,0,Length(LblN1.Text)- 1)
+     else
+         LblN2.Text := Copy(LblN2.Text,0,Length(LblN2.Text)- 1)
 end;
 
 procedure TForm1.Btn_DivClick(Sender: TObject);

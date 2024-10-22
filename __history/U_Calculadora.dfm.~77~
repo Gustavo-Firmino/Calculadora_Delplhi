@@ -4,7 +4,7 @@ object Form1: TForm1
   BorderStyle = bsSizeToolWin
   Caption = 'CALCULADORA'
   ClientHeight = 491
-  ClientWidth = 569
+  ClientWidth = 551
   Color = clWindowFrame
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,7 +17,7 @@ object Form1: TForm1
   object LblOp: TLabel
     Left = 246
     Top = 30
-    Width = 74
+    Width = 28
     Height = 116
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -27,8 +27,8 @@ object Form1: TForm1
     ParentFont = False
   end
   object Pnl_Botoes: TPanel
-    Left = 20
-    Top = 152
+    Left = 84
+    Top = 168
     Width = 385
     Height = 315
     Align = alCustom
@@ -190,7 +190,7 @@ object Form1: TForm1
   object LblN1: TLabeledEdit
     Left = 8
     Top = 22
-    Width = 200
+    Width = 232
     Height = 124
     Color = clGreen
     EditLabel.Width = 26
@@ -206,9 +206,9 @@ object Form1: TForm1
     TabOrder = 1
   end
   object LblN2: TLabeledEdit
-    Left = 361
+    Left = 326
     Top = 22
-    Width = 200
+    Width = 218
     Height = 124
     Color = clGreen
     EditLabel.Width = 26
