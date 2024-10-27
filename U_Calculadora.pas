@@ -193,6 +193,10 @@ begin
      LblN1.Text := '';
      LblN2.Text := '';
 
+     Btn_Soma.Enabled := True;
+     Btn_Sub.Enabled := True;
+     Btn_Multi.Enabled := True;
+     Btn_Div.Enabled := True;
 end;
 
 procedure TForm1.Btn_VirgClick(Sender: TObject);

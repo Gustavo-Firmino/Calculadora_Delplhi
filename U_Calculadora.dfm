@@ -1,7 +1,6 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  BorderStyle = bsSizeToolWin
   Caption = 'CALCULADORA'
   ClientHeight = 491
   ClientWidth = 551
@@ -12,12 +11,13 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object LblOp: TLabel
     Left = 246
     Top = 25
-    Width = 83
+    Width = 28
     Height = 116
     Alignment = taCenter
     Font.Charset = DEFAULT_CHARSET
